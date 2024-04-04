@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  [class*="col-"] {
+    float: left;
+  }
+  
+  $maincolor: white;
+  /* --main-color:  rgb(178, 222, 236);; */
+  
+  
+  @keyframes fadeUp {
+  
+    /* 0%{ margin-top: 24px; opacity: 0;};
+    25%{ margin-top: 18px; opacity: .25;};
+    50%{ margin-top: 12px; opacity: .5;};
+    75%{ margin-top: 6px; opacity: .75;};
+    100%{ margin-top: 0px; opacity: 1;}; */
+    from {
+      margin-top: 100px;
+      opacity: 0;
+    }
+  
+    ;
+  
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  
+    ;
+  }
+  
+  @keyframes fadeLeft {
+  
+    /* 0%{ margin-top: 24px; opacity: 0;};
+    25%{ margin-top: 18px; opacity: .25;};
+    50%{ margin-top: 12px; opacity: .5;};
+    75%{ margin-top: 6px; opacity: .75;};
+    100%{ margin-top: 0px; opacity: 1;}; */
+    from {
+      margin-left: 100px;
+      opacity: 0;
+    }
+  
+    ;
+  
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  
+    ;
+  
+  }
+  
+  /* --------------- header -----------------*/
+  
+  .header {
+    /* background-color: rgb(226, 226, 226); */
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    height: 700px;
+    // background-image: url(../assets/view.png);
+    background-attachment: fixed;
+    background-size: 100%;
+  }
+  
+  .header .bigname {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 25px;
+    font-family: 'Lobster', cursive;
+    /* color: rgb(62, 159, 188); */
+    color: $maincolor;
+  }
+  
+  .header .bigname a {
+    color: $maincolor;
+  }
+  
+  .mobile {
+    display: none !important;
+  }
+  
+  .desktop {
+    display: block;
+  }
+  
+  .head img {
+    position: relative;
+    border-radius: 205px;
+    height: 350px;
+    width: 250px;
+    // float: right;
+    animation-name: fadeUp;
+    animation-duration: 3.5s;
+    box-shadow: 0px 0px 16px #cdcdcd;
+  }
+  
+  .welcomeText {
+    color: $maincolor;
+    font-size: 30px;
+    padding-top: 80px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    animation-name: fadeUp;
+    animation-duration: 3.5s;
+  }
+  
+  .links {
+    padding-top: 30px;
+  }
+  
+  div div .linkDiv {
+    margin-bottom: 20px;
+    padding-left: 60px;
+    animation-name: fadeLeft;
+    animation-duration: 3s;
+  }
+  
+  .link {
+    font-size: 25px;
+    /* color: rgb(200, 242, 255); */
+    color: $maincolor;
+    text-transform: capitalize;
+  }
+  
+  .link:hover {
+    color: white;
+  }
+  
+  .link img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /*------------------------------------*/
+  
+  
+  /*--------- center content --------*/
+  .CV_content {
+    margin-top: 15px;
+    padding: 0px 5%;
+    scroll-behavior: smooth;
+  }
+  
+  .groupTitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    color: gray;
+    color: rgb(35, 74, 129);
+    font-weight: 600;
+    font-family: 'Tourney', cursive;
+    margin: 25px 0px;
+  }
+  
+  .paragraph {
+    font-weight: 650;
+    font-size: 18px;
+    color: rgb(90, 88, 88);
+    padding: 10px;
+    padding-left: 30px;
+  }
+  
+  /* // personal department icons  */
+  .Personelicon {
+    margin-left: 15px;
+    height: 30px;
+    width: 30px;
+  }
+  
+  #locationImage {
+    margin-left: 0px;
+  }
+  
+  /*---------------------------------*/
+  
+  ul .skill {
+    font-size: 25px;
+    padding-left: 17px;
+    display: inline-block;
+    font-weight: 600;
+    margin: 10px;
+  }
+  
+  .liGroup {
+    margin-top: 30px;
+    list-style: circle;
+  }
+  
+  #personal {
+    margin-top: 5px;
+    margin-bottom: 200px;
+  }
+  
+  #summary {
+    margin-top: 30px;
+  }
+  
+  #Education {
+    margin-top: 30px;
+  }
+  
+  #Education img {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .faculty {
+    margin-top: -10px;
+  }
+  
+  #frontendSkills {
+    margin-top: 30px;
+  }
+  
+  #skills {
+    margin-top: 30px;
+  }
+  
+  #languges {
+    margin-top: 20px;
+  }
+  
+  #hobbies {
+    margin-top: 10px;
+  }
+  
+  /*----------------------------------*/
+  
+  /*----------- right side -----------*/
+  
+  .CV_list {
+    position: fixed;
+    padding-top: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    background-color: rgb(21, 53, 99);
+    z-index: -1;
+  }
+  
+  .CV_list button {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(192, 192, 192);
+    padding: 5px;
+    color: rgb(62, 159, 188);
+    font-weight: 700;
+  }
+  
+  .CV_list button:hover {
+    color: white;
+    background-color: rgb(167, 167, 167)
+  }
+  
+  .spectialfontsize {
+    font-size: 17px;
+  }
+  
+  
+  
+  
+  
+  /* ------------------- mobile view ------------------- */
+  
+  
+  @media only screen and (max-width: 768px) {
+  
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  
+    .myphoto {
+      display: none;
+    }
+  
+    .CV_list {
+      display: none;
+    }
+  
+    /* header style */
+    .header {
+      /* background-image: url(photos/max.png); */
+      background-size: cover;
+    }
+  
+    .header .bigname {
+      font-size: 23px;
+      margin-bottom: 5px;
+      padding-bottom: 10px;
+    }
+  
+    .header div .mobile {
+    display: flex !important;
+    }
+  
+    .header .desktop {
+      display: none;
+    }
+  
+    .header div div .welcomeText {
+      font-size: 17px;
+      padding: 10px;
+    }
+  
+    .header div div .linkDiv {
+      padding: 5px;
+      margin-bottom: 5px;
+      animation: both
+    }
+  
+    .header div div div .link {
+      font-size: 15px;
+    }
+  
+    .header div div div .link img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .header .head img {
+      height: 185px;
+      width: 135px;
+    }
+  
+    /* --------------*/
+  
+    /* personal department */
+    #personal {
+      padding: 0px;
+      margin: 0px;
+      margin-bottom: 250px;
+    }
+  
+    #personal img {
+      height: 20px;
+      width: 20px;
+    }
+  
+    #mailImage {
+      display: none;
+    }
+  
+    /* --------------------*/
+  
+    .groupTitle {
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .paragraph {
+      font-size: 13px;
+      margin-top: 0px;
+      padding-left: 0px;
+    }
+  
+    .liGroup {
+      margin-top: 5px;
+    }
+  
+    ul .skill {
+      font-size: 13px;
+      display: block;
+      line-height: 10px;
+      margin-left: -50px;
+      font-weight: bold;
+    }
+  
+    /* other departments */
+    #summary {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #Education {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #Education img {
+      display: none;
+    }
+  
+    .faculty {
+      margin-top: -10px;
+    }
+  
+    #frontendSkills {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #frontendSkills ul li {
+      font-size: 13px;
+    }
+  
+    #skills {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #languges {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #hobbies {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #projects {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  /*-----------------------------------------------------*/
