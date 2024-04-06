@@ -18,10 +18,10 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
   ],
   imports: [
     BrowserModule,
+    AdminModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    AdminModule,
     HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideDatabase(() => getDatabase()),

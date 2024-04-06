@@ -25,6 +25,10 @@ export class AdminService {
     } else if (position != "" && position != " " && position && key != "" && key != " " && key) {
       return this.http.put(`${this.databaseURL}/${position}/${key}.json`, data)
     } else {
+      console.log(data)
+      console.log(position)
+      console.log(key)
+      console.log(typeOfAction)
       return this.http.put(`${this.databaseURL}/error.json`, data)
     }
   }
