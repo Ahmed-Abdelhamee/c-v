@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BgImgServiceService } from './services/bg-img.service';
 import { ProfileService } from './services/profile.service';
 import { ViewportScroller } from '@angular/common';
 import { NavigationEnd, Router } from '@angular/router';
 import { AdminService } from './services/admin.service';
+import * as Aos from 'aos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'c-v';
 
   bg_src = this.bgImg.bg_img;
@@ -39,11 +40,19 @@ export class AppComponent {
       }
     })
   }
+  
+  ngOnInit(): void {
+    Aos.init()
+  }
 
   email = "medoabdelhameed3@gmail.com";
 
   partsPosition(position: string) {
     this.scroller.scrollToAnchor(`${position}`);
+  }
+
+  f(){
+    console.log(6)
   }
 
 
