@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/c-v/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -35,8 +35,7 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
-            "baseHref": "/my-app/"
+            ]
           },
           "configurations": {
             "production": {
@@ -108,7 +107,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/c-v/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -123,8 +122,7 @@
               "sourceMap": true,
               "extractLicenses": false,
               "vendorChunk": true
-            },
-            "baseHref": "/my-app/"
+            }
           },
           "defaultConfiguration": "production"
         },
