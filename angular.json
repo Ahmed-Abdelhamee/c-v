@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/c-v/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -122,7 +122,8 @@
               "sourceMap": true,
               "extractLicenses": false,
               "vendorChunk": true
-            }
+            },
+            "baseHref": "/c-v/"
           },
           "defaultConfiguration": "production"
         },
