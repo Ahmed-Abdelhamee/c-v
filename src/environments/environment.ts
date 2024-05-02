@@ -9,4 +9,5 @@ export const environment = {
     messagingSenderId: '469598966647',
     measurementId: 'G-G6W9NF7H1N',
   },
+  baseUrl:"https://ahmed-abdelhamee.github.io/c-v"
 };

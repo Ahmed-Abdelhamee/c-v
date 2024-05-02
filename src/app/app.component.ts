@@ -5,6 +5,7 @@ import { ViewportScroller } from '@angular/common';
 import { NavigationEnd, Router } from '@angular/router';
 import { AdminService } from './services/admin.service';
 import * as AOS from 'aos';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import * as AOS from 'aos';
 export class AppComponent implements OnInit{
   title = 'c-v';
 
-  bg_src = this.bgImg.bg_img;
+  // bg_src = this.bgImg.bg_img;
+  bg_src = `${environment.baseUrl}/assets/view.png`;
 
   profileImg = this.myImg.my_photo;
   
