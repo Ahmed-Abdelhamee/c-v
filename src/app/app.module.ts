@@ -12,6 +12,7 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {provideClientHydration} from '@angular/platform-browser';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {provideClientHydration} from '@angular/platform-browser';
   ],
   providers: [
     provideClientHydration(),
+    { provide: APP_BASE_HREF, useValue: '/c-v' }
     // {provide:HashLocationStrategy, useClass : HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
