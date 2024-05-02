@@ -4,7 +4,7 @@ import { ProfileService } from './services/profile.service';
 import { ViewportScroller } from '@angular/common';
 import { NavigationEnd, Router } from '@angular/router';
 import { AdminService } from './services/admin.service';
-import * as Aos from 'aos';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -42,7 +42,7 @@ export class AppComponent implements OnInit{
   }
   
   ngOnInit(): void {
-    Aos.init()
+    AOS.init()
   }
 
   email = "medoabdelhameed3@gmail.com";
